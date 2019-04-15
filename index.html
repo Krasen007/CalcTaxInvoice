@@ -1,0 +1,70 @@
+<!-- made by Krasen -->
+<!doctype html>
+<html amp lang="bg">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Сметало</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "CalculatingPage",
+        "headline": "Open-source framework for calculating tax on invoices",
+        "datePublished": "2018-09-2512:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  
+    <style amp-custom>
+            /* any custom style goes here */
+            body {
+              background-color: rgb(241, 241, 241);
+            }
+            amp-img {
+              background-color: gray;
+              border: 1px solid black;
+            }
+    </style>
+    <link rel="canonical" href="smetalo.html">
+
+</head>
+  <body>
+        <amp-img src="money.jpg" alt="Парички" height="125" width="200"></amp-img>
+        <h1>Изчисляване на сума за фактура</h1>
+
+
+        <script src="calculate.js"></script>    
+
+        <p id="izchisleniq">    
+        Изчисления:
+        </p>
+        
+        <p id="rezultat">
+            Резултат:
+        </p>
+        
+        <p id="other">
+            <!-- Поле 3: -->
+        </p>
+        
+        <script>
+        document.getElementById("izchisleniq").innerHTML = calcTax();
+        </script>
+        
+        
+        <script>
+        document.getElementById("rezultat").innerHTML = result();
+        
+        
+        function result() {
+            return ["<i>Ползвайте '.'(точка) вместо ','(запетайка)</i>"]
+        }
+        </script>
+
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!-- made by Krasen -->
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <title>Сметало</title>
+            <link rel="amphtml" href="index.html">
+    </head>
+<body> 
+<h1>Изчисляване на сума за фактура</h1>
+
+<script src="calculate.js"></script>    
+
+<p id="izchisleniq">    
+Изчисления:
+</p>
+
+<p id="rezultat">
+    Резултат:
+</p>
+
+<p id="other">
+    <!-- Поле 3: -->
+</p>
+
+<script>
+document.getElementById("izchisleniq").innerHTML = calcTax();
+</script>
+
+
+<script>
+document.getElementById("rezultat").innerHTML = result();
+
+
+function result() {
+    return ["<i>Ползвайте '.'(точка) вместо ','(запетайка)</i>"]
+}
+</script>
+
+</body>
+</html>
